@@ -1,0 +1,220 @@
+body {
+    font-family: 'Warnock Pro Bold Caption';
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    position: relative;
+    background: url('hofpd.jpg') no-repeat center center/cover;
+    height: 123vh;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 17%;
+    left: 0%;
+    z-index: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.hero-container {
+    position: relative;
+    height: 100%;
+    padding: 0 5%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: pre-wrap;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-custom {
+    margin: 1rem;
+    padding: 0.4rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: #6a1b9a;
+    color: white;
+    border: solid 2.5px white;
+}
+
+.btn-custom:hover {
+    color: white;
+}
+
+.btn-group {
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btn-custom::after {
+    content: '→'; /* Arrow symbol */
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 20px; /* Adjust spacing for the arrow */
+    opacity: 0;
+    transform: translateX(-10px); /* Slide-in effect */
+    transition: background-color 0.4s ease, border-color 0.4s ease, transform 0.4s ease; /* Smooth hover effect */
+}
+
+.btn-custom:hover::after {
+    opacity: 1;
+    transform: translateX(0); /* Arrow slides into view */
+}
+
+.btn-custom:hover {
+    border-color: white; /* Optional hover effect for button */
+    padding: 0.4rem 2.4rem;
+
+}
+
+
+/* Course Section */
+
+
+.course-conatiner {
+    padding: 0px 110px 0px 110px;
+}
+.course-title-section {
+    font-family: 'ATF Alternate Gothic ExtraCondensed Bold', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem; /* Added spacing between letters */
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 2.9rem;
+}
+.course-link {
+    color: #007bff;
+    font-size: 0.7rem;
+    float: right; /* Aligns the button to the right */
+    padding: 2px 8px 2px 8px;
+}
+.course-link:hover {
+    text-decoration: underline;
+    background: rgb(219, 219, 219);
+    padding: 2px 8px 2px 8px;
+}
+
+.course-link:hover:after {
+    content: '→'; /* Arrow symbol */
+    transition: 0.6;
+    
+}
+
+.card-img-top {
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0px 20px 18px -10px rgba(0.3, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+.card-body p {
+    font-family: 'ATF Alternate Gothic ExtraCondensed Bold', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+   /* Responsive Design */
+@media (max-width: 767px) {
+.card-body p {
+    white-space: nowrap;
+}
+
+}
+
+
+
+
+.why-us-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 133px;
+}
+.why-us-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6a1b9a;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.why-us-item {
+    margin-bottom: 40px;
+}
+.why-us-item-title {
+    color: #6a1b9a;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.why-us-item-title::before,
+.why-us-item-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: #6a1b9a;
+}
+.why-us-item-title::before {
+    left: -50px;
+}
+
+
+.why-us-item-title::after {
+    right: -50px;
+}
+.why-us-image {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+.why-us-text {
+    display: flex;
+    align-items: center;
+}
+
+.why-us-text p {
+    font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    .why-us-text {
+        text-align: center;
+    }
+}
