@@ -34,13 +34,18 @@ body {
     position: relative;
     height: 100%;
     padding: 0 5%;
+    margin-left: 20px;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 1.2;
-    white-space: pre-wrap;
+    white-space: normal;
+    text-align: left;
+    margin-bottom: 4.8rem;
+    padding: 0%;
+    
 }
 
 .hero-content p {
@@ -66,7 +71,7 @@ body {
 .btn-group {
     position: absolute;
     top: 12%;
-    right: 5%;
+    right: 2%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -128,7 +133,7 @@ body {
 }
 
 .card-img-top {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     box-shadow: 0px 20px 18px -10px rgba(0.3, 0, 0, 0.3);
     margin-top: 10px;
@@ -149,8 +154,15 @@ body {
 
    /* Responsive Design */
 @media (max-width: 767px) {
-.card-body p {
+   .card-body p {
     white-space: nowrap;
+}
+   .hero-section {
+    height: 140vh;
+}
+    .btn-group {
+    top: 8%;
+    margin-right: 110px;
 }
 
 }
@@ -161,14 +173,15 @@ body {
 .why-us-section {
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 133px;
+    padding: 86px;
 }
 .why-us-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #6a1b9a;
     text-align: center;
     margin-bottom: 40px;
+    font-weight: bolder;
 }
 .why-us-item {
     margin-bottom: 40px;
@@ -180,16 +193,16 @@ body {
     text-align: center;
     position: relative;
     margin-bottom: 15px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 .why-us-item-title::before,
 .why-us-item-title::after {
     content: "";
     position: absolute;
     top: 50%;
-    width: 40px;
-    height: 2px;
-    background-color: #6a1b9a;
+    width: 70px;
+    height: 1px;
+    background-color: #000000;
 }
 .why-us-item-title::before {
     left: -50px;
@@ -200,21 +213,129 @@ body {
     right: -50px;
 }
 .why-us-image {
-    max-width: 70%;
+    max-width: 85%;
     height: auto;
     border-radius: 5px;
+    margin-left: 80px;
 }
 .why-us-text {
     display: flex;
-    align-items: center;
+    align-items: left;
+    margin-bottom: 170px;
 }
 
 .why-us-text p {
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
     .why-us-text {
         text-align: center;
     }
+}
+
+
+.kerala {
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.what-we-do-section {
+    background-color: #1a1919;
+}
+.what-we-do-section h5 {
+    color: #f0ad4e;
+    letter-spacing: 2px;
+}
+.what-we-do-section h2 {
+    font-weight: 700;
+}
+.assure-card {
+   
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    color: #f8f9fa;
+    text-align: center;
+}
+.assure-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.assure-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.section-wrapper {
+    background-color: #f8f9fa; /* Light gray background for the section */
+    padding: 50px 0;
+}
+.know-your-skill {
+    background-color: #7b3f98;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 60px;
+}
+.know-your-skill h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.know-your-skill p {
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+.know-your-skill .btn {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+}
+.upcoming-events h3 {
+    font-weight: bold;
+    margin-top: 80px;
+    color: #000000;
+}
+.upcoming-events .event {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.upcoming-events .event i {
+    font-size: 20px;
+    color: #7b3f98;
+}
+
+.upcoming-events .event span {
+    color: #000000;
+}
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin: 5px;
 }
