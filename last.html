@@ -1,75 +1,126 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Container</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanzo Academy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styl.css">
+    <style>
+        /* Fix for white spaces */
+        body {
+            overflow-x: hidden;
+        }
+
+        .navbar img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hero-section {
+            padding: 20px;
+        }
+
+        .hero-container {
+            max-width: 100%;
+        }
+
+        .btn-group button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .course-container .card {
+            width: 100%;
+        }
+
+        .why-us-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .custom-container {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .why-us-text {
+                text-align: center;
+            }
+
+            .btn-custom {
+                width: 100%;
+            }
+
+            .navbar-nav {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .course-container .row-cols-md-4 {
+                row-cols: 1;
+            }
+
+            .upcoming-events .event {
+                display: flex;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 
-<style>
-    body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-.section-bg {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.section-1 {
-  background: #6c757d;
-  z-index: 1;
-}
-
-.section-2 {
-  background: #343a40;
-  z-index: 1;
-  margin-top: -50px;
-}
-
-.custom-container {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  background-color: #6a1b9a; /* Purple background */
-  color: white;
-  max-width: 80%;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-</style>
 <body>
-  <!-- Section 1 -->
-  <section class="section-bg section-1">
-    <h1 class="text-center text-white">Section 1</h1>
-  </section>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="image/logo.png" alt="Futuh International Logo" width="130">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Section 2 -->
-  <section class="section-bg section-2">
-    <h1 class="text-center text-white">Section 2</h1>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p>FOLLOW YOUR PASSION</p>
+                <h1>BUILD YOUR DREAMS IN CYBER SECURITY</h1>
+            </div>
+            <div class="btn-group">
+                <button class="btn-custom">Login</button>
+                <a href="enquiry.html"><button class="btn-custom">Enquiry</button></a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Custom Container -->
-  <div class="custom-container text-white text-center p-5 rounded">
-    <h5 class="mb-3">What Drives Us</h5>
-    <h1 class="fw-bold mb-4">Our Mission</h1>
-    <p>
-      At Avanzo Academy, our mission is to empower individuals with the knowledge, skills, and ethical mindset needed to safeguard the digital realm. 
-      We are committed to cultivating a community of cybersecurity professionals who excel in the face of evolving threats, contribute meaningfully to the industry, 
-      and lead with integrity. Our mission is to shape the next generation of cybersecurity leaders who not only excel in technical expertise but also embody 
-      the values of responsibility, innovation, and ethical leadership. Avanzo Academy is dedicated to empowering guardians of the digital frontier, ensuring a safer 
-      and more resilient digital world for all.
-    </p>
-  </div>
+    <!-- Course Section -->
+    <div class="container course-container my-5">
+        <h1 class="text-center mb-4 course-title-section">COURSES</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+            <!-- Cards here -->
+        </div>
+    </div>
 
-  <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

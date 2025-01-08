@@ -1,5 +1,5 @@
 body {
-   
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -34,6 +34,7 @@ body {
     height: 100%;
     padding: 0 5%;
     margin-left: 20px;
+    max-width: 100%;
 }
 
 .hero-content h1 {
@@ -44,7 +45,6 @@ body {
     text-align: left;
     margin-bottom: 4.8rem;
     padding: 0%;
-    
 }
 
 .hero-content p {
@@ -78,51 +78,47 @@ body {
     align-items: flex-end;
 }
 
-
-
 .btn-custom::after {
-    content: '→'; /* Arrow symbol */
+    content: '→';
     font-size: 18px;
     color: white;
     position: absolute;
-    right: 20px; /* Adjust spacing for the arrow */
+    right: 20px;
     opacity: 0;
-    transform: translateX(-10px); /* Slide-in effect */
-    transition: background-color 0.4s ease, border-color 0.4s ease, transform 0.4s ease; /* Smooth hover effect */
+    transform: translateX(-10px);
+    transition: background-color 0.4s ease, border-color 0.4s ease, transform 0.4s ease;
 }
 
 .btn-custom:hover::after {
     opacity: 1;
-    transform: translateX(0); /* Arrow slides into view */
+    transform: translateX(0);
 }
 
 .btn-custom:hover {
-    border-color: white; /* Optional hover effect for button */
+    border-color: white;
     padding: 0.4rem 2.4rem;
-
 }
-
-
-/* Course Section */
-
 
 .course-conatiner {
     padding: 0px 110px 0px 110px;
 }
+
 .course-title-section {
     font-family: 'ATF Alternate Gothic ExtraCondensed Bold', sans-serif;
     font-size: 2.5rem;
-    letter-spacing: 0.4rem; /* Added spacing between letters */
+    letter-spacing: 0.4rem;
     font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 2.9rem;
 }
+
 .course-link {
     color: #007bff;
     font-size: 0.7rem;
-    float: right; /* Aligns the button to the right */
+    float: right;
     padding: 2px 8px 2px 8px;
 }
+
 .course-link:hover {
     text-decoration: underline;
     background: rgb(219, 219, 219);
@@ -130,9 +126,8 @@ body {
 }
 
 .course-link:hover:after {
-    content: '→'; /* Arrow symbol */
+    content: '→';
     transition: 0.6;
-    
 }
 
 .card-img-top {
@@ -155,23 +150,17 @@ body {
     white-space: pre-wrap;
 }
 
-   /* Responsive Design */
 @media (max-width: 767px) {
-
-   .hero-section {
-    height: 140vh;
-}
+    .hero-section {
+        height: 140vh;
+    }
     .btn-group {
-    top: 8%;
-    margin-right: 110px;
+        top: 8%;
+        margin-right: 110px;
+    }
 }
 
-}
-
-
-
- /* Default Styles (for larger screens) */
- .why-us-section {
+.why-us-section {
     padding: 60px 113px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -190,34 +179,34 @@ body {
 }
 
 .why-us-item-title {
-font-size: 1.3rem;
-font-weight: bold;
-color: #6a1b9a;
-text-transform: uppercase;
-margin-bottom: 20px;
-position: relative;
-text-align: center;
-display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #6a1b9a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
 }
 
 .why-us-item-title::before,
 .why-us-item-title::after {
-content: "";
-position: absolute;
-top: 50%;
-width: 50px;
-height: 1px;
-background-color: #000;
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 1px;
+    background-color: #000;
 }
 
 .why-us-item-title::before {
-left: -60px;
-margin-top: -1px;
+    left: -60px;
+    margin-top: -1px;
 }
 
 .why-us-item-title::after {
-right: -60px;
-margin-top: -1px;
+    right: -60px;
+    margin-top: -1px;
 }
 
 .why-us-image {
@@ -229,7 +218,6 @@ margin-top: -1px;
     text-align: left;
 }
 
-/* Responsive Design for 768px and Smaller Screens */
 @media (max-width: 768px) {
     .why-us-section {
         padding: 30px 20px;
@@ -270,31 +258,22 @@ margin-top: -1px;
     }
 }
 
-
 .kerala {
     background-color: antiquewhite;
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
 .what-we-do-section {
     background-color: #1a1919;
     z-index: 1;
     position: relative;
-    
 }
+
 .what-we-do-section h5 {
     color: #9b9895;
     letter-spacing: 2px;
 }
+
 .what-we-do-section h2 {
     font-size: 2.4rem;
     font-weight: 700;
@@ -305,53 +284,48 @@ margin-top: -1px;
     margin-bottom: 250px;
     padding: 50px 100px 50px 100px;
 }
+
 .assure-card {
-   
     border: none;
     border-radius: 8px;
- 
     color: #f8f9fa;
     text-align: center;
 }
+
 .assure-card h4 {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 15px;
     color: #fafafa;
 }
+
 .assure-card p {
     font-size: 0.9rem;
     line-height: 1.6;
     text-align: justify;
 }
+
 .icon img {
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
 }
 
- /* Responsive Design */
- @media (max-width: 767px) {
+@media (max-width: 767px) {
     .what-we-do-container {
-      padding: 0;
-      
+        padding: 0;
     }
- }
+}
 
-
-
- 
 .know section {
     z-index: 1;
     position: relative;
-   
-
 }
 
 .section-wrapper {
-    background-color: #f8f9fa; /* Light gray background for the section */
-
+    background-color: #f8f9fa;
 }
+
 .know-your-skill {
     background-color: #7b3f98;
     color: white;
@@ -364,16 +338,19 @@ margin-top: -1px;
     justify-content: space-between;
     margin: 40px;
 }
+
 .know-your-skill h2 {
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .know-your-skill p {
     text-align: justify;
     margin-bottom: 20px;
     line-height: 2;
 }
+
 .know-your-skill .btn {
     display: block;
     margin: 0 auto;
@@ -381,17 +358,20 @@ margin-top: -1px;
     border-radius: 20px;
     color: white;
 }
+
 .upcoming-events h3 {
     font-weight: bold;
     margin-top: 80px;
     color: #000000;
 }
+
 .upcoming-events .event {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
 }
+
 .upcoming-events .event i {
     font-size: 20px;
     color: #7b3f98;
@@ -401,278 +381,41 @@ margin-top: -1px;
     color: #000000;
 }
 
-
-
-     /* Responsive Design */
-     @media (max-width: 767px) {
-        .upcoming-events {
-          margin-left: 40px;
-        }
-     }
+@media (max-width: 767px) {
+    .upcoming-events {
+        margin-left: 40px;
+    }
+}
 
 .custom-container {
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    background-color: #6a1b9a; /* Purple background */
+    background-color: #6a1b9a;
     color: white;
     max-width: 80%;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     padding: 0;
     overflow: hidden;
-    
-    
-  }
+}
 
-  .mission-text {
+.mission-text {
     padding: 50px 100px;
     margin-top: 0;
-    
-  }
+}
 
-  .mission-text p {
+.mission-text p {
     text-align: justify;
     line-height: 1.8;
     margin: 0;
-  }
+}
 
-
-     /* Responsive Design */
 @media (max-width: 767px) {
-   .mission-text {
-    padding: 0;
-   }
-   .custom-container {
-    margin-top: 100px;
-   }
- 
+    .mission-text {
+        padding: 0;
+    }
+    .custom-container {
+        margin-top: 100px;
+    }
 }
-
-
-
-
-
-
-
-
- /* Enquiry Page */
-
-.enquiry-section {
-    min-height: 100vh;
-    color: #000000;
-    background-color: #ffffff;
-    position: relative;
-}
-
-.cta-section {
-    background: url('image/bg.jpg') no-repeat center center/cover;
-    height: 80%;
-}
-
-.enquiry-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #363636;
-    z-index: 1;
-}
-
-.container {
-    position: relative;
-    z-index: 2; /* Ensures content is above the overlay */
-}
-
-.cta-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 40px;
-    text-align: left;
-    margin-left: 110px;
-    color: #ffffff;
-}
-
-.enquiry-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #000;
-}
-
-form .form-label {
-    font-size: 13px;
-    color: #363636;
-}
-
-form .form-control {
-    background-color: rgb(224, 224, 224);
-    border: 1px solid #ddd;
-    color: #000000;
-    border-radius: 0;
-}
-
-form .btn {
-    padding: 10px 20px;
-    color: rgb(43, 43, 219);
-    border: solid 1px rgb(104, 104, 233);
-    border-radius: 0%;
-}
-
-form .btn:hover {
-    background-color:rgb(224, 224, 224) ;
-    color: rgb(43, 43, 219);
-
-}
-
-form .btn:hover:after {
-    content: ' >'; /* Arrow symbol */
-    transition: 0.6;
-    
-}
-
-
-
-
-
-
-
-/* Course Contents*/
-
-.course-title {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .module-separator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .module-text {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-    padding: 0 10px;
-    background-color: #fff;
-  }
-  
-  .module-separator::before,
-  .module-separator::after {
-    content: "";
-    height: 1px;
-    background-color: #ccc;
-    flex-grow: 1;
-  }
-  
-  .module-separator::before {
-    margin-right: 10px;
-  }
-  
-  .module-separator::after {
-    margin-left: 10px;
-  }
-
-.course-contents-title {
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.4rem;
-    padding-bottom: 25px;
-}
-
-
-.course-content-card-text {
-    font-size: 0.8rem;
-    text-align: left;
-}
-
-
-
-
-
-/* Course Contents Page*/
-
-.cta-section {
-    background: url('image/bg.jpg') no-repeat center center/cover;
-    height: 80%;
-}
-
-
-.cta-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 40px;
-    text-align: left;
-    margin-left: 110px;
-    color: #ffffff;
-}
-
-
-.course-title {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .module-separator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .module-text {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-    padding: 0 10px;
-    background-color: #fff;
-  }
-  
-  .module-separator::before,
-  .module-separator::after {
-    content: "";
-    height: 1px;
-    background-color: #ccc;
-    flex-grow: 1;
-  }
-  
-  .module-separator::before {
-    margin-right: 10px;
-  }
-  
-  .module-separator::after {
-    margin-left: 10px;
-  }
-
-.course-contents-title {
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.4rem;
-    padding-bottom: 25px;
-}
-
-
-.course-content-card-text {
-    font-size: 0.8rem;
-    text-align: left;
-}
-
-
-     /* Responsive Design */
-     @media (max-width: 767px) {
-   .cta-heading {
-      margin-left: 0;
-   }
- 
-}
-
